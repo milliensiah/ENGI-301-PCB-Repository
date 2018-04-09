@@ -678,6 +678,17 @@ chip, wave soldering</description>
 <text x="1.27" y="8.89" size="1.27" layer="25">&gt; NAME</text>
 <text x="1.27" y="-5.08" size="1.27" layer="27">&gt; VALUE</text>
 </package>
+<package name="LTST-C191TBKT">
+<smd name="1" x="-0.75" y="0.4" dx="0.8" dy="0.8" layer="1"/>
+<smd name="2" x="1.9" y="0.4" dx="0.8" dy="0.8" layer="1"/>
+<wire x1="-1.17" y1="-0.03" x2="2.33" y2="-0.03" width="0.0635" layer="1"/>
+<wire x1="-1.17" y1="0.82" x2="2.33" y2="0.82" width="0.0635" layer="1"/>
+<wire x1="-1.17" y1="0.79" x2="-1.17" y2="-0.01" width="0.0635" layer="1"/>
+<wire x1="2.33" y1="0.81" x2="2.33" y2="0.01" width="0.0635" layer="1"/>
+<text x="-0.2" y="1" size="0.25" layer="125">&gt; NAME</text>
+<text x="-0.2" y="-0.5" size="0.25" layer="127">&gt; VALUE</text>
+<text x="-1.4" y="0.7" size="0.2" layer="21">+</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MPU-9250">
@@ -805,6 +816,21 @@ chip, wave soldering</description>
 <pin name="2" x="33.02" y="0" length="middle" rot="R180"/>
 <pin name="3" x="-5.08" y="-15.494" length="middle"/>
 <pin name="4" x="33.02" y="-15.494" length="middle" rot="R180"/>
+</symbol>
+<symbol name="LTST-C191TBKT">
+<description>SMD LED</description>
+<wire x1="0" y1="0" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="7.62" x2="-15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="-15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="7.62" x2="-22.86" y2="7.62" width="0.254" layer="94"/>
+<pin name="(+)" x="-27.94" y="7.62" length="middle"/>
+<pin name="(-)" x="12.7" y="7.62" length="middle" rot="R180"/>
+<text x="-15.24" y="17.78" size="1.27" layer="125">&gt; NAME</text>
+<text x="-15.24" y="-5.08" size="1.27" layer="127">&gt; VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1174,6 +1200,23 @@ Sizes: 0402, 0603 &amp; 0805</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTST-C191TBKT" prefix="U" uservalue="yes">
+<description>SMD LED</description>
+<gates>
+<gate name="G$1" symbol="LTST-C191TBKT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTST-C191TBKT">
+<connects>
+<connect gate="G$1" pin="(+)" pad="1"/>
+<connect gate="G$1" pin="(-)" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
