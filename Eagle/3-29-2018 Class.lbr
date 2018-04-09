@@ -36,9 +36,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -666,6 +666,18 @@ chip, wave soldering</description>
 <circle x="0" y="0" radius="1.15" width="0.127" layer="21"/>
 <text x="1.27" y="3.81" size="1.27" layer="21">+</text>
 </package>
+<package name="TACTILE-BUTTON">
+<pad name="1" x="0" y="5" drill="0.8" shape="square"/>
+<pad name="2" x="12.5" y="5" drill="0.8" shape="square"/>
+<pad name="3" x="0" y="0" drill="0.8" shape="square"/>
+<pad name="4" x="12.5" y="0" drill="0.8" shape="square"/>
+<wire x1="0.7" y1="-3.3" x2="11.8" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="11.8" y1="-3.3" x2="11.8" y2="8.25" width="0.127" layer="21"/>
+<wire x1="0.7" y1="8.25" x2="11.8" y2="8.25" width="0.127" layer="21"/>
+<wire x1="0.7" y1="-3.3" x2="0.7" y2="8.25" width="0.127" layer="21"/>
+<text x="1.27" y="8.89" size="1.27" layer="25">&gt; NAME</text>
+<text x="1.27" y="-5.08" size="1.27" layer="27">&gt; VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MPU-9250">
@@ -778,6 +790,21 @@ chip, wave soldering</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="TACTILE-BUTTON">
+<wire x1="0" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<circle x="12.7" y="-9.652" radius="0.567959375" width="0.254" layer="94"/>
+<circle x="12.7" y="-5.588" radius="0.567959375" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.414" x2="12.7" y2="-15.494" width="0.254" layer="94"/>
+<wire x1="12.192" y1="-5.842" x2="9.652" y2="-8.382" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.494" x2="12.7" y2="-15.494" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.494" x2="27.94" y2="-15.494" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="0" length="middle"/>
+<pin name="2" x="33.02" y="0" length="middle" rot="R180"/>
+<pin name="3" x="-5.08" y="-15.494" length="middle"/>
+<pin name="4" x="33.02" y="-15.494" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1129,6 +1156,24 @@ Sizes: 0402, 0603 &amp; 0805</description>
 <connects>
 <connect gate="G$1" pin="GND" pad="-"/>
 <connect gate="G$1" pin="V" pad="+"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TACTILE-BUTTON">
+<gates>
+<gate name="G$1" symbol="TACTILE-BUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TACTILE-BUTTON">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
