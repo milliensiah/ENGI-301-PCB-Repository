@@ -1804,6 +1804,7 @@ T
 O
 N
 S</text>
+<text x="313.7" y="20.1" size="2.54" layer="94">Millie Antwi-Nsiah</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
