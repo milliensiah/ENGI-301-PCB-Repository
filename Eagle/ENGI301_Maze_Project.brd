@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -173,7 +173,7 @@
 <wire x1="160.02" y1="0" x2="160.02" y2="63.5" width="0" layer="20"/>
 <wire x1="160.02" y1="63.5" x2="24.13" y2="63.5" width="0" layer="20"/>
 <wire x1="24.13" y1="63.5" x2="24.13" y2="0" width="0" layer="20"/>
-<text x="55.753" y="60.96" size="1.778" layer="25">ENGI 301 MAZE PROJECT</text>
+<text x="52.197" y="60.96" size="1.778" layer="25">ENGI 301 MAZE PROJECT</text>
 <text x="124.46" y="60.96" size="1.778" layer="25">REVISION 1</text>
 <text x="150.241" y="1.397" size="2.54" layer="25">M.A.</text>
 </plain>
@@ -1146,24 +1146,35 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="U3" pad="1"/>
 <contactref element="U4" pad="1"/>
 <contactref element="U7" pad="24"/>
-<wire x1="56.87" y1="23.554" x2="55.473" y2="24.951" width="0.254" layer="1"/>
-<wire x1="55.473" y1="24.951" x2="53.85655" y2="24.951" width="0.254" layer="1"/>
-<wire x1="53.85655" y1="24.951" x2="43.688" y2="35.11955" width="0.254" layer="1"/>
-<wire x1="43.688" y1="35.11955" x2="43.688" y2="37.846" width="0.254" layer="1"/>
-<wire x1="43.688" y1="37.846" x2="41.529" y2="40.005" width="0.254" layer="1"/>
-<wire x1="28.067" y1="40.005" x2="25.654" y2="42.418" width="0.254" layer="1"/>
-<wire x1="25.654" y1="42.418" x2="25.654" y2="56.134" width="0.254" layer="1"/>
-<wire x1="25.654" y1="56.134" x2="31.369" y2="61.849" width="0.254" layer="1"/>
-<wire x1="41.529" y1="40.005" x2="28.067" y2="40.005" width="0.254" layer="1"/>
-<wire x1="56.87" y1="23.554" x2="65.151" y2="31.835" width="0.254" layer="1"/>
-<wire x1="65.151" y1="31.835" x2="65.151" y2="52.705" width="0.254" layer="1"/>
-<wire x1="65.151" y1="52.705" x2="71.374" y2="58.928" width="0.254" layer="1"/>
 <wire x1="103.886" y1="59.563" x2="103.886" y2="61.849" width="0.254" layer="1"/>
-<wire x1="71.374" y1="58.928" x2="103.251" y2="58.928" width="0.254" layer="1"/>
-<wire x1="103.251" y1="58.928" x2="103.886" y2="59.563" width="0.254" layer="1"/>
-</signal>
-<signal name="SYS_VDD2_5V">
 <contactref element="U7" pad="49"/>
+<polygon width="0.254" layer="16">
+<vertex x="102.616" y="62.484"/>
+<vertex x="105.156" y="62.484"/>
+<vertex x="105.156" y="58.928"/>
+<vertex x="86.868" y="58.928"/>
+<vertex x="86.868" y="35.052"/>
+<vertex x="59.436" y="35.052"/>
+<vertex x="58.928" y="35.052"/>
+<vertex x="58.928" y="33.528"/>
+<vertex x="58.928" y="22.352"/>
+<vertex x="43.688" y="22.352"/>
+<vertex x="43.18" y="22.352"/>
+<vertex x="43.18" y="40.132"/>
+<vertex x="24.892" y="40.132"/>
+<vertex x="24.892" y="41.148"/>
+<vertex x="24.892" y="62.992"/>
+<vertex x="32.512" y="62.992"/>
+<vertex x="32.512" y="60.452"/>
+<vertex x="27.432" y="60.452"/>
+<vertex x="27.432" y="42.672"/>
+<vertex x="45.72" y="42.672"/>
+<vertex x="45.72" y="24.892"/>
+<vertex x="57.912" y="24.892"/>
+<vertex x="57.912" y="37.592"/>
+<vertex x="83.82" y="37.592"/>
+<vertex x="83.82" y="62.484"/>
+</polygon>
 </signal>
 </signals>
 </board>
